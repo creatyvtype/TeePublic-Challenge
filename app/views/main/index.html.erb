@@ -1,9 +1,12 @@
 <h1>TeePublic + Cloudinary = <3</h1>
 
 <%= render 'options' %>
-<%= cl_image_tag(@item.filename) %>
-<%= cl_image_tag(@graphic.filename, :width => @size, :height => @size, :crop => :fit) %>
 
-<%= link_to "Womens-Tee", root_path(item_type: "Womens-Tee-Asphalt.png") %>
-<%= link_to "iPhone 7 Plus", root_path(item_type: "iphone-7-plus.png") %>
-<%= link_to "Max-Width 600", root_path(art_size: "600") %>
+<div id="item">
+	<%= render partial: 'item', locals: {item: @item} %>
+</div>
+
+<div id="graphic">
+	<%= render partial: 'graphic', locals: {graphic: @graphic, size: @size }%>
+</div>
+

@@ -1,12 +1,12 @@
 <div id="options">
 	Select a product<br>
 	<% @item_options.each do |item| %>
-		<%= item.name %><br>
+		<%= link_to item.name, fetch_item_path(filename: item.filename), remote: true %><br>
 	<% end %>
 
 	Select a size<br>
 	<% @size_options.each do |size| %>
-		<%= size %><br>
+		<%= link_to size, fetch_size_path(size: size), remote: true %><br>
 	<% end %>
 
 	Select a graphic<br>
@@ -14,3 +14,4 @@
 		<%= graphic.name %><br>
 	<% end %>
 </div>
+
