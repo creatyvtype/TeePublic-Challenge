@@ -1,24 +1,11 @@
-# README
+# TEEPUBLIC CHALLENGE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run:  
+1. Clone repo locally  
+2. Obtain .env file from author and place in main directory  
+3. Install gems with `bundle install`  
+4. Run server with `rails s` (No migrations should be required)  
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Note*
+The API did not allow background removal without paying for the service, so that part was not done.  
+Also, I way overthought it on the Ajaxified branch where I tried to make some options happen. Otherwise, this challenge was fairly simple.
