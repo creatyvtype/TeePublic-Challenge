@@ -1,9 +1,27 @@
 <h1>TeePublic + Cloudinary = <3</h1>
 
-<%= render 'options' %>
-<%= cl_image_tag(@item.filename) %>
-<%= cl_image_tag(@graphic.filename, :width => @size, :height => @size, :crop => :fit) %>
+<h3>Art with Max-Width 600</h3>
+<div class="image-container">
+	<%= cl_image_tag("Freud_Rage_Art.png", width: "600", crop: :fit) %>
+</div>
 
-<%= link_to "Womens-Tee", root_path(item_type: "Womens-Tee-Asphalt.png") %>
-<%= link_to "iPhone 7 Plus", root_path(item_type: "iphone-7-plus.png") %>
-<%= link_to "Max-Width 600", root_path(art_size: "600") %>
+<h3>Art 800X800 with dimensions:</h3>
+<div class="image-container">
+	<%= cl_image_tag("Freud_Rage_Art.png", width: "800", height: "800", crop: :fit) %>
+</div>
+
+<h3>Design on shirt:</h3>
+<div class="product">
+	<%= cl_image_tag("Womens-Tee-Asphalt.png", width: "1260") %>
+	<div class="graphic">
+		<%= cl_image_tag("Freud_Rage_Art.png", width: "430", height: "573", crop: :fit)%>
+	</div>
+</div>
+
+<h3>Design on phone case:</h3>
+<div class="product">
+	<%= cl_image_tag("iphone-7-plus.png", width: "1260") %>
+	<div class="graphic-phone">
+		<%= cl_image_tag("Freud_Rage_Art.png", width: "430", height: "573", crop: :fit)%>
+	</div>
+</div>
