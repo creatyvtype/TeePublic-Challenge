@@ -12,16 +12,10 @@
 
 <h3>Design on shirt:</h3>
 <div class="product">
-	<%= cl_image_tag("Womens-Tee-Asphalt.png", width: "1260") %>
-	<div class="graphic">
-		<%= cl_image_tag("Freud_Rage_Art.png", width: "430", height: "573", crop: :fit)%>
-	</div>
+	<%= cl_image_tag("Womens-Tee-Asphalt.png", overlay: "Freud_Rage_Art.png", width: "430", height: "573", crop: :fit, gravity: :north_west, x: "410", y: "350") %>
 </div>
 
 <h3>Design on phone case:</h3>
 <div class="product">
-	<%= cl_image_tag("iphone-7-plus.png", width: "1260") %>
-	<div class="graphic-phone">
-		<%= cl_image_tag("Freud_Rage_Art.png", width: "430", height: "573", crop: :fit)%>
-	</div>
+	<%= cl_image_tag("iphone-7-plus.png", transformation: {background: "#a30000"}, overlay: "Freud_Rage_Art.png", width: "430", height: "573", crop: :fit, gravity: :south_east, x: 405, y: 425,) %>
 </div>
